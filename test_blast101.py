@@ -14,6 +14,11 @@
 import unittest
 import os
 import sys
+VENV_PYTHON = "/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3"
+if sys.executable != VENV_PYTHON:
+    import subprocess
+    result = subprocess.run([VENV_PYTHON] + sys.argv, stdout=sys.stdout, stderr=sys.stderr)
+    sys.exit(result.returncode)
 import tempfile
 import configparser
 
@@ -28,7 +33,7 @@ programme_settings.read()
 
 
 # ===========================================================================
-# 1. Smith-Waterman Tests
+# 1a. Smith-Waterman Tests
 # ===========================================================================
 class TestSmithWaterman(unittest.TestCase):
     """Tests for the Smith-Waterman alignment implementation in smith_waterman_p.py"""
@@ -111,6 +116,70 @@ class TestSmithWaterman(unittest.TestCase):
         for row in mat:
             for cell in row:
                 self.assertEqual(cell, 0, "Initial matrix cells should all be 0")
+
+
+# ===========================================================================
+# 1b. Smith-Waterman Manually Verified Score Tests
+# ===========================================================================
+class TestSmithWatermanKnownScores(unittest.TestCase):
+    """
+    Tests using manually calculated alignment scores as ground truth.
+    Scores verified by hand using BLOSUM62 matrix values.
+    These provide a precise numerical check that the SW implementation
+    is producing correct scores, not just plausible ones.
+    """
+
+    def setUp(self):
+        import smith_waterman_p as SW
+        self.SW = SW
+
+    def test_mswv_self_alignment_score(self):
+        """
+        Manually verified: MSWV vs MSWV with BLOSUM62, no gaps.
+        Diagonal scores: M-M=5, S-S=4, W-W=11, V-V=4 → total = 24
+        No gaps possible in a self-alignment of 4 residues.
+        """
+        score = self.SW.perform_smith_waterman("MSWV", "MSWV", False, False)
+        self.assertEqual(score, 24,
+            f"MSWV self-alignment should score exactly 24 (M-M=5, S-S=4, W-W=11, V-V=4), got {score}")
+
+    def test_single_residue_self_alignment(self):
+        """
+        Manually verified: W vs W with BLOSUM62.
+        BLOSUM62 W-W = 11, no gaps possible.
+        """
+        score = self.SW.perform_smith_waterman("W", "W", False, False)
+        self.assertEqual(score, 11,
+            f"W vs W should score exactly 11 (BLOSUM62 W-W=11), got {score}")
+
+    def test_single_residue_self_alignment_methionine(self):
+        """
+        Manually verified: M vs M with BLOSUM62.
+        BLOSUM62 M-M = 5.
+        """
+        score = self.SW.perform_smith_waterman("M", "M", False, False)
+        self.assertEqual(score, 5,
+            f"M vs M should score exactly 5 (BLOSUM62 M-M=5), got {score}")
+
+    def test_known_mismatch_score(self):
+        """
+        Manually verified: WW vs MW with BLOSUM62, no gaps.
+        Best local alignment is W-W = 11 (single residue match).
+        M-W in BLOSUM62 = -1, so aligning full sequences scores 11 + (-1) = 10.
+        SW takes the best local alignment, which is just W-W = 11.
+        """
+        score = self.SW.perform_smith_waterman("WW", "MW", False, False)
+        self.assertEqual(score, 11,
+            f"WW vs MW best local alignment should score 11 (W-W match), got {score}")
+
+    def test_four_residue_known_score(self):
+        """
+        Manually verified: ACAC vs ACAC with BLOSUM62.
+        Diagonal: A-A=4, C-C=9, A-A=4, C-C=9 → total = 26.
+        """
+        score = self.SW.perform_smith_waterman("ACAC", "ACAC", False, False)
+        self.assertEqual(score, 26,
+            f"ACAC self-alignment should score exactly 26 (A-A=4, C-C=9, A-A=4, C-C=9), got {score}")
 
 
 # ===========================================================================
