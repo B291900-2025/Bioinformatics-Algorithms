@@ -1,0 +1,4 @@
+uniprot_sprot.fasta
+__pycache__/
+.idea/
+*.pyc

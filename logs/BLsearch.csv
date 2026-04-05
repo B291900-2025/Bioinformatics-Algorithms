@@ -1,0 +1,201 @@
+Name	SWScore	Exscore	BitScore	Expect	SeqIndex
+"sp|Q80Z64|NANOG_MOUSE Homeobox protein NANOG OS=Mus musculus OX=10090 GN=Nanog PE=1 SV=1"	320.0	320.0	nan	0.00000E+00	141412
+"sp|Q5TM83|NANOG_MUSMM Homeobox protein NANOG OS=Mus musculus molossinus OX=57486 GN=Nanog PE=2 SV=1"	311.0	311.0	nan	0.00000E+00	141413
+"sp|A1YG92|NANG2_PANPA Putative homeobox protein NANOG2 OS=Pan paniscus OX=9597 GN=NANOGP1 PE=5 SV=1"	103.0	81.0	53	7.55209E-06	141356
+"sp|A2T763|NANG2_PANTR Putative homeobox protein NANOG2 OS=Pan troglodytes OX=9598 GN=NANOGP1 PE=5 SV=1"	103.0	81.0	53	7.55209E-06	141357
+"sp|Q3LTE0|NANOG_PANTR Homeobox protein NANOG OS=Pan troglodytes OX=9598 GN=NANOG PE=3 SV=1"	103.0	81.0	53	7.55209E-06	141414
+"sp|Q9H9S0|NANOG_HUMAN Homeobox protein NANOG OS=Homo sapiens OX=9606 GN=NANOG PE=1 SV=2"	100.0	81.0	52	1.21798E-05	141410
+"sp|Q6NSW7|NANP8_HUMAN Homeobox protein NANOGP8 OS=Homo sapiens OX=9606 GN=NANOGP8 PE=2 SV=2"	95.0	76.0	51	2.70140E-05	141416
+"sp|Q8N7R0|NANG2_HUMAN Putative homeobox protein NANOG2 OS=Homo sapiens OX=9606 GN=NANOGP1 PE=5 SV=1"	94.0	78.0	51	3.16795E-05	141355
+"sp|Q4JM65|NANOG_BOVIN Homeobox protein NANOG OS=Bos taurus OX=9913 GN=NANOG PE=2 SV=1"	93.0	73.0	51	3.71508E-05	141409
+"sp|Q5TM84|NANOG_MACFA Homeobox protein NANOG OS=Macaca fascicularis OX=9541 GN=NANOG PE=2 SV=1"	87.0	78.0	49	9.66251E-05	141411
+"sp|Q05186|RCN1_MOUSE Reticulocalbin-1 OS=Mus musculus OX=10090 GN=Rcn1 PE=1 SV=1"	61.0	61.0	44	0.00605	181882
+"sp|Q057C9|RPOA_BUCCC DNA-directed RNA polymerase subunit alpha OS=Buchnera aphidicola subsp. Cinara cedri (strain Cc) OX=372461 GN=rpoA PE=3 SV=1"	61.0	54.0	44	0.00605	197686
+"sp|Q4WVV6|MDM10_ASPFU Mitochondrial distribution and morphology protein 10 OS=Aspergillus fumigatus (strain ATCC MYA-4609 / CBS 101355 / FGSC A1100 / Af293) OX=330879 GN=mdmB PE=3 SV=1"	60.0	60.0	43	0.00708	123585
+"sp|Q4P5J4|HSE1_MYCMD Class E vacuolar protein-sorting machinery protein HSE1 OS=Mycosarcoma maydis OX=5270 GN=HSE1 PE=3 SV=1"	60.0	46.0	43	0.00708	96438
+"sp|B0Y240|MDM10_ASPFC Mitochondrial distribution and morphology protein 10 OS=Aspergillus fumigatus (strain CBS 144.89 / FGSC A1163 / CEA10) OX=451804 GN=mdmB PE=3 SV=1"	59.0	59.0	43	0.00830	123583
+"sp|A2R3N6|MDM10_ASPNC Mitochondrial distribution and morphology protein 10 OS=Aspergillus niger (strain ATCC MYA-4892 / CBS 513.88 / FGSC A1513) OX=425011 GN=mdmB PE=3 SV=1"	57.0	57.0	43	0.01137	123586
+"sp|P47655|Y415_MYCGE Uncharacterized protein MG415 OS=Mycoplasma genitalium (strain ATCC 33530 / DSM 19775 / NCTC 10195 / G37) OX=243273 GN=MG415 PE=3 SV=2"	57.0	57.0	43	0.01137	263731
+"sp|B8NM08|MDM10_ASPFN Mitochondrial distribution and morphology protein 10 OS=Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167) OX=332952 GN=mdmB PE=3 SV=1"	56.0	56.0	42	0.01331	123584
+"sp|Q2U5V7|MDM10_ASPOR Mitochondrial distribution and morphology protein 10 OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=mdmB PE=3 SV=1"	56.0	56.0	42	0.01331	123587
+"sp|Q15293|RCN1_HUMAN Reticulocalbin-1 OS=Homo sapiens OX=9606 GN=RCN1 PE=1 SV=1"	56.0	56.0	42	0.01331	181881
+"sp|Q0S2G8|SYE_RHOJR Glutamate--tRNA ligase OS=Rhodococcus jostii (strain RHA1) OX=101510 GN=gltX PE=3 SV=1"	56.0	55.0	42	0.01331	224784
+"sp|Q658P3|STEA3_HUMAN Metalloreductase STEAP3 OS=Homo sapiens OX=9606 GN=STEAP3 PE=1 SV=2"	56.0	49.0	42	0.01331	220622
+"sp|A1DDI7|MDM10_NEOFI Mitochondrial distribution and morphology protein 10 OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=mdmB PE=3 SV=1"	55.0	55.0	42	0.01557	123609
+"sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=sdhA PE=3 SV=1"	55.0	46.0	42	0.01557	211301
+"sp|O78413|RK1_GUITH Large ribosomal subunit protein uL1c OS=Guillardia theta OX=55529 GN=rpl1 PE=3 SV=1"	54.0	54.0	42	0.01822	187863
+"sp|O33120|SYE_MYCLE Glutamate--tRNA ligase OS=Mycobacterium leprae (strain TN) OX=272631 GN=gltX PE=3 SV=1"	54.0	51.0	42	0.01822	224683
+"sp|B4SAM9|SAT_PELPB Sulfate adenylyltransferase OS=Pelodictyon phaeoclathratiforme (strain DSM 5477 / BU-1) OX=324925 GN=sat PE=3 SV=1"	53.0	52.0	42	0.02129	210129
+"sp|P29466|CASP1_HUMAN Caspase-1 OS=Homo sapiens OX=9606 GN=CASP1 PE=1 SV=1"	53.0	51.0	42	0.02129	28636
+"sp|Q8KE30|SAT_CHLTE Sulfate adenylyltransferase OS=Chlorobaculum tepidum (strain ATCC 49652 / DSM 12025 / NBRC 103806 / TLS) OX=194439 GN=sat PE=3 SV=1"	53.0	49.0	42	0.02129	210108
+"sp|Q7U9G9|SYI_PARMW Isoleucine--tRNA ligase OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=ileS PE=3 SV=1"	53.0	48.0	42	0.02129	227092
+"sp|A1CBT0|MDM10_ASPCL Mitochondrial distribution and morphology protein 10 OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=mdmB PE=3 SV=1"	52.0	52.0	41	0.02488	123582
+"sp|O42130|TOP2A_CHICK DNA topoisomerase 2-alpha OS=Gallus gallus OX=9031 GN=TOP2A PE=2 SV=2"	52.0	50.0	41	0.02488	239806
+"sp|A2X1A1|ARFF_ORYSI Auxin response factor 6 OS=Oryza sativa subsp. indica OX=39946 GN=ARF6 PE=3 SV=1"	52.0	46.0	41	0.02488	11381
+"sp|Q6H6V4|ARFF_ORYSJ Auxin response factor 6 OS=Oryza sativa subsp. japonica OX=39947 GN=ARF6 PE=1 SV=1"	52.0	46.0	41	0.02488	11382
+"sp|Q68XM0|DAPB_RICTY 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) OX=257363 GN=dapB PE=3 SV=1"	52.0	46.0	41	0.02488	48354
+"sp|P21372|PRP5_YEAST Pre-mRNA-processing ATP-dependent RNA helicase PRP5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PRP5 PE=1 SV=1"	52.0	45.0	41	0.02488	170497
+"sp|P52387|CVC2_HHV6U Capsid vertex component 2 OS=Human herpesvirus 6A (strain Uganda-1102) OX=10370 GN=CVC2 PE=3 SV=1"	51.0	51.0	41	0.02905	43696
+"sp|P52537|CVC2_HHV6Z Capsid vertex component 2 OS=Human herpesvirus 6B (strain Z29) OX=36351 GN=CVC2 PE=3 SV=1"	51.0	51.0	41	0.02905	43697
+"sp|P52536|UL25_HHV6G Virion-packaging protein UL25 homolog (Fragment) OS=Human herpesvirus 6A (strain GS) OX=10369 GN=U50 PE=3 SV=1"	51.0	51.0	41	0.02905	249027
+"sp|Q68DE3|USF3_HUMAN Basic helix-loop-helix domain-containing protein USF3 OS=Homo sapiens OX=9606 GN=USF3 PE=1 SV=4"	51.0	51.0	41	0.02905	251362
+"sp|Q9NX94|WBP1L_HUMAN WW domain binding protein 1-like OS=Homo sapiens OX=9606 GN=WBP1L PE=1 SV=2"	51.0	51.0	41	0.02905	256478
+"sp|P0C1G7|WBP1L_RAT WW domain binding protein 1-like OS=Rattus norvegicus OX=10116 GN=Wbp1l PE=3 SV=1"	51.0	51.0	41	0.02905	256480
+"sp|O84075|Y072_CHLTR Putative zinc metalloprotease CT_072 OS=Chlamydia trachomatis serovar D (strain ATCC VR-885 / DSM 19411 / UW-3/Cx) OX=272561 GN=CT_072 PE=3 SV=1"	51.0	51.0	41	0.02905	259149
+"sp|Q5UPQ1|YR762_MIMIV Uncharacterized protein R762 OS=Acanthamoeba polyphaga mimivirus OX=212035 GN=MIMI_R762 PE=4 SV=1"	51.0	49.0	41	0.02905	271793
+"sp|Q8DM27|RL1_THEVB Large ribosomal subunit protein uL1 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=rplA PE=3 SV=1"	50.0	50.0	41	0.03390	189630
+"sp|A5W4B6|URE1_PSEP1 Urease subunit alpha OS=Pseudomonas putida (strain ATCC 700007 / DSM 6899 / JCM 31910 / BCRC 17059 / LMG 24140 / F1) OX=351746 GN=ureC PE=3 SV=1"	50.0	50.0	41	0.03390	250241
+"sp|B0KUZ7|URE1_PSEPG Urease subunit alpha OS=Pseudomonas putida (strain GB-1) OX=76869 GN=ureC PE=3 SV=1"	50.0	50.0	41	0.03390	250243
+"sp|Q88J04|URE1_PSEPK Urease subunit alpha OS=Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440) OX=160488 GN=ureC PE=3 SV=1"	50.0	50.0	41	0.03390	250244
+"sp|Q2YSA8|Y504_STAAB Uncharacterized epimerase/dehydratase SAB0504 OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) OX=273036 GN=SAB0504 PE=3 SV=1"	50.0	50.0	41	0.03390	264378
+"sp|Q3A3G8|RSMA_SYNC1 Ribosomal RNA small subunit methyltransferase A OS=Syntrophotalea carbinolica (strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 GN=rsmA PE=3 SV=1"	50.0	49.0	41	0.03390	205963
+"sp|Q3AQ83|SAT_CHLCH Sulfate adenylyltransferase OS=Chlorobium chlorochromatii (strain CaD3) OX=340177 GN=sat PE=3 SV=1"	50.0	49.0	41	0.03390	210105
+"sp|B3R678|SYM_CUPTR Methionine--tRNA ligase OS=Cupriavidus taiwanensis (strain DSM 17343 / BCRC 17206 / CCUG 44338 / CIP 107171 / LMG 19424 / R1) OX=977880 GN=metG PE=3 SV=1"	50.0	49.0	41	0.03390	228464
+"sp|Q8BVC4|CCD68_MOUSE Coiled-coil domain-containing protein 68 OS=Mus musculus OX=10090 GN=Ccdc68 PE=2 SV=1"	50.0	48.0	41	0.03390	30138
+"sp|Q54GG8|BZPI_DICDI Probable basic-leucine zipper transcription factor I OS=Dictyostelium discoideum OX=44689 GN=bzpI PE=3 SV=1"	50.0	47.0	41	0.03390	25781
+"sp|B0JNQ5|RL1_MICAN Large ribosomal subunit protein uL1 OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=rplA PE=3 SV=1"	50.0	47.0	41	0.03390	189572
+"sp|B1VG41|SYE_CORU7 Glutamate--tRNA ligase OS=Corynebacterium urealyticum (strain ATCC 43042 / DSM 7109) OX=504474 GN=gltX PE=3 SV=1"	50.0	47.0	41	0.03390	224537
+"sp|P0A637|SYE_MYCBO Glutamate--tRNA ligase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=gltX PE=3 SV=1"	50.0	47.0	41	0.03390	224677
+"sp|A1KMY6|SYE_MYCBP Glutamate--tRNA ligase OS=Mycobacterium bovis (strain BCG / Pasteur 1173P2) OX=410289 GN=gltX PE=3 SV=1"	50.0	47.0	41	0.03390	224678
+"sp|A5U703|SYE_MYCTA Glutamate--tRNA ligase OS=Mycobacterium tuberculosis (strain ATCC 25177 / H37Ra) OX=419947 GN=gltX PE=3 SV=1"	50.0	47.0	41	0.03390	224693
+"sp|P9WFV8|SYE_MYCTO Glutamate--tRNA ligase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=gltX PE=3 SV=1"	50.0	47.0	41	0.03390	224694
+"sp|P9WFV9|SYE_MYCTU Glutamate--tRNA ligase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=gltX PE=1 SV=1"	50.0	47.0	41	0.03390	224695
+"sp|Q6FJZ6|ATG5_CANGA Autophagy protein 5 OS=Candida glabrata (strain ATCC 2001 / BCRC 20586 / JCM 3761 / NBRC 0622 / NRRL Y-65 / CBS 138) OX=284593 GN=ATG5 PE=3 SV=1"	49.0	49.0	41	0.03952	17674
+"sp|P39475|DHE4_SACSH NADP-specific glutamate dehydrogenase OS=Saccharolobus shibatae (strain ATCC 51178 / DSM 5389 / JCM 8931 / NBRC 15437 / B12) OX=523848 GN=gdhA PE=3 SV=2"	49.0	49.0	41	0.03952	52689
+"sp|B6HL48|MDM10_PENRW Mitochondrial distribution and morphology protein 10 OS=Penicillium rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / Wisconsin 54-1255) OX=500485 GN=mdm10 PE=3 SV=1"	49.0	49.0	41	0.03952	123612
+"sp|Q7SH49|NPL4_NEUCR Nuclear protein localization protein 4 OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=npl4 PE=3 SV=2"	49.0	49.0	41	0.03952	146451
+"sp|P39361|SGCR_ECOLI Putative sgc region transcriptional regulator OS=Escherichia coli (strain K12) OX=83333 GN=sgcR PE=4 SV=1"	49.0	49.0	41	0.03952	214278
+"sp|C3MZ63|GCH3_SULIA GTP cyclohydrolase III OS=Sulfolobus islandicus (strain M.16.27) OX=427318 GN=gch3 PE=3 SV=1"	49.0	48.0	41	0.03952	78096
+"sp|C4KIE1|GCH3_SULIK GTP cyclohydrolase III OS=Sulfolobus islandicus (strain M.16.4 / Kamchatka #3) OX=426118 GN=gch3 PE=3 SV=1"	49.0	48.0	41	0.03952	78097
+"sp|C3MR15|GCH3_SULIL GTP cyclohydrolase III OS=Sulfolobus islandicus (strain L.S.2.15 / Lassen #1) OX=429572 GN=gch3 PE=3 SV=1"	49.0	48.0	41	0.03952	78098
+"sp|C3MX03|GCH3_SULIM GTP cyclohydrolase III OS=Sulfolobus islandicus (strain M.14.25 / Kamchatka #1) OX=427317 GN=gch3 PE=3 SV=1"	49.0	48.0	41	0.03952	78099
+"sp|C3NGF2|GCH3_SULIN GTP cyclohydrolase III OS=Sulfolobus islandicus (strain Y.N.15.51 / Yellowstone #2) OX=419942 GN=gch3 PE=3 SV=1"	49.0	48.0	41	0.03952	78100
+"sp|Q4G0J3|LARP7_HUMAN La-related protein 7 OS=Homo sapiens OX=9606 GN=LARP7 PE=1 SV=1"	49.0	48.0	41	0.03952	112184
+"sp|Q4R627|LARP7_MACFA La-related protein 7 OS=Macaca fascicularis OX=9541 GN=LARP7 PE=2 SV=1"	49.0	48.0	41	0.03952	112185
+"sp|Q9N2I1|CASP1_PIG Caspase-1 OS=Sus scrofa OX=9823 GN=CASP1 PE=2 SV=1"	49.0	47.0	41	0.03952	28638
+"sp|Q03246|RT17_YEAST Small ribosomal subunit protein uS17m OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MRPS17 PE=1 SV=1"	49.0	46.0	41	0.03952	207390
+"sp|B2HIH4|SYE_MYCMM Glutamate--tRNA ligase OS=Mycobacterium marinum (strain ATCC BAA-535 / M) OX=216594 GN=gltX PE=3 SV=1"	49.0	46.0	41	0.03952	224685
+"sp|Q73VI4|SYE_MYCPA Glutamate--tRNA ligase OS=Mycolicibacterium paratuberculosis (strain ATCC BAA-968 / K-10) OX=262316 GN=gltX PE=3 SV=1"	49.0	46.0	41	0.03952	224687
+"sp|A0PPY8|SYE_MYCUA Glutamate--tRNA ligase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=gltX PE=3 SV=2"	49.0	46.0	41	0.03952	224696
+"sp|Q9LIR8|FBK67_ARATH F-box/kelch-repeat protein At3g23880 OS=Arabidopsis thaliana OX=3702 GN=At3g23880 PE=2 SV=1"	48.0	48.0	41	0.04602	69125
+"sp|Q05CL8|LARP7_MOUSE La-related protein 7 OS=Mus musculus OX=10090 GN=Larp7 PE=1 SV=2"	48.0	48.0	41	0.04602	112186
+"sp|Q5XI01|LARP7_RAT La-related protein 7 OS=Rattus norvegicus OX=10116 GN=Larp7 PE=1 SV=2"	48.0	48.0	41	0.04602	112187
+"sp|Q50341|MGP3_MYCPN Mgp-operon protein 3 OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_142 PE=1 SV=1"	48.0	48.0	41	0.04602	126664
+"sp|G5EG61|PGP14_CAEEL P-glycoprotein 14 OS=Caenorhabditis elegans OX=6239 GN=pgp-14 PE=2 SV=1"	48.0	48.0	41	0.04602	162024
+"sp|Q8BQ33|TICRR_MOUSE Treslin OS=Mus musculus OX=10090 GN=Ticrr PE=1 SV=2"	48.0	48.0	41	0.04602	237406
+"sp|Q21SZ2|URE1_ALBFT Urease subunit alpha OS=Albidiferax ferrireducens (strain ATCC BAA-621 / DSM 15236 / T118) OX=338969 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250097
+"sp|Q3J770|URE1_NITOC Urease subunit alpha OS=Nitrosococcus oceani (strain ATCC 19707 / BCRC 17464 / JCM 30415 / NCIMB 11848 / C-107) OX=323261 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250213
+"sp|A1VKW3|URE1_POLNA Urease subunit alpha OS=Polaromonas naphthalenivorans (strain CJ2) OX=365044 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250225
+"sp|Q12DU3|URE1_POLSJ Urease subunit alpha OS=Polaromonas sp. (strain JS666 / ATCC BAA-500) OX=296591 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250226
+"sp|A2C4S2|URE1_PROM1 Urease subunit alpha OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250228
+"sp|A2CE01|URE1_PROM3 Urease subunit alpha OS=Prochlorococcus marinus (strain MIT 9303) OX=59922 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250229
+"sp|Q7V3V2|URE1_PROMM Urease subunit alpha OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250232
+"sp|Q46IY3|URE1_PROMT Urease subunit alpha OS=Prochlorococcus marinus (strain NATL2A) OX=59920 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250234
+"sp|Q3AVR1|URE1_SYNS9 Urease subunit alpha OS=Synechococcus sp. (strain CC9902) OX=316279 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250303
+"sp|Q117Z3|URE1_TRIEI Urease subunit alpha OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=ureC PE=3 SV=1"	48.0	48.0	41	0.04602	250309
+"sp|P75599|Y093_MYCPN Putative MgpC-like protein MPN_093 OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_093 PE=5 SV=1"	48.0	48.0	41	0.04602	259253
+"sp|P75372|Y414_MYCPN Putative MgpC-like protein MPN_414 OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_414 PE=5 SV=1"	48.0	48.0	41	0.04602	263725
+"sp|P75319|Y464_MYCPN Putative MgpC-like protein MPN_464 OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_464 PE=5 SV=1"	48.0	48.0	41	0.04602	264045
+"sp|B1W5F4|BIOB_STRGG Biotin synthase OS=Streptomyces griseus subsp. griseus (strain JCM 4626 / CBS 651.72 / NBRC 13350 / KCC S-0626 / ISP 5235) OX=455632 GN=bioB PE=3 SV=1"	48.0	47.0	41	0.04602	23694
+"sp|C3N783|GCH3_SULIY GTP cyclohydrolase III OS=Sulfolobus islandicus (strain Y.G.57.14 / Yellowstone #1) OX=439386 GN=gch3 PE=3 SV=1"	48.0	47.0	41	0.04602	78101
+"sp|Q9V4C8|HCF_DROME Host cell factor OS=Drosophila melanogaster OX=7227 GN=Hcf PE=1 SV=2"	48.0	47.0	41	0.04602	90280
+"sp|Q99661|KIF2C_HUMAN Kinesin-like protein KIF2C OS=Homo sapiens OX=9606 GN=KIF2C PE=1 SV=2"	48.0	47.0	41	0.04602	109801
+"sp|B9FK36|ACC2_ORYSJ Acetyl-CoA carboxylase 2 OS=Oryza sativa subsp. japonica OX=39947 GN=ACC2 PE=3 SV=2"	48.0	46.0	41	0.04602	2556
+"sp|P0C9T4|5054R_ASFP4 Protein MGF 505-4R OS=African swine fever virus (isolate Tick/South Africa/Pretoriuskop Pr4/1996) OX=561443 GN=Pret-040 PE=3 SV=1"	48.0	45.0	41	0.04602	790
+"sp|Q3V3V9|CARL2_MOUSE Capping protein, Arp2/3 and myosin-I linker protein 2 OS=Mus musculus OX=10090 GN=Carmil2 PE=1 SV=2"	48.0	45.0	41	0.04602	28381
+"sp|A8EXL6|DAPB_RICCK 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia canadensis (strain McKiel) OX=293613 GN=dapB PE=3 SV=1"	47.0	47.0	40	0.05354	48348
+"sp|Q9LSB9|EREX_ARATH PX domain-containing protein EREX OS=Arabidopsis thaliana OX=3702 GN=EREX PE=1 SV=1"	47.0	47.0	40	0.05354	65403
+"sp|Q3TMV7|PYRD1_MOUSE Pyridine nucleotide-disulfide oxidoreductase domain-containing protein 1 OS=Mus musculus OX=10090 GN=Pyroxd1 PE=2 SV=1"	47.0	47.0	40	0.05354	177430
+"sp|Q6CJM4|RAD5_KLULA DNA repair protein RAD5 OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 GN=RAD5 PE=1 SV=1"	47.0	47.0	40	0.05354	180026
+"sp|O94810|RGS11_HUMAN Regulator of G-protein signaling 11 OS=Homo sapiens OX=9606 GN=RGS11 PE=1 SV=2"	47.0	47.0	40	0.05354	185521
+"sp|P53127|SNT2_YEAST E3 ubiquitin-protein ligase SNT2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=SNT2 PE=1 SV=1"	47.0	47.0	40	0.05354	216772
+"sp|A1R7K6|SYE_PAEAT Glutamate--tRNA ligase OS=Paenarthrobacter aurescens (strain TC1) OX=290340 GN=gltX PE=3 SV=1"	47.0	47.0	40	0.05354	224720
+"sp|Q1IBP0|URE1_PSEE4 Urease subunit alpha OS=Pseudomonas entomophila (strain L48) OX=384676 GN=ureC PE=3 SV=1"	47.0	47.0	40	0.05354	250239
+"sp|B1J815|URE1_PSEPW Urease subunit alpha OS=Pseudomonas putida (strain W619) OX=390235 GN=ureC PE=3 SV=1"	47.0	47.0	40	0.05354	250245
+"sp|P27382|VP11_BPPRD Infectivity protein P11 OS=Enterobacteria phage PRD1 OX=10658 GN=XI PE=1 SV=2"	47.0	47.0	40	0.05354	255105
+"sp|B1MH79|Y3886_MYCA9 Putative S-adenosyl-L-methionine-dependent methyltransferase MAB_3886c OS=Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948) OX=561007 GN=MAB_3886c PE=3 SV=1"	47.0	47.0	40	0.05354	263527
+"sp|Q6FQY7|ATG7_CANGA Ubiquitin-like modifier-activating enzyme ATG7 OS=Candida glabrata (strain ATCC 2001 / BCRC 20586 / JCM 3761 / NBRC 0622 / NRRL Y-65 / CBS 138) OX=284593 GN=ATG7 PE=3 SV=1"	47.0	46.0	40	0.05354	17703
+"sp|Q68FD9|K1549_MOUSE UPF0606 protein KIAA1549 OS=Mus musculus OX=10090 GN=Kiaa1549 PE=1 SV=3"	47.0	46.0	40	0.05354	106280
+"sp|Q8MA10|RPOC2_CHAGL DNA-directed RNA polymerase subunit beta'' OS=Chaetosphaeridium globosum OX=96477 GN=rpoC2 PE=3 SV=1"	47.0	46.0	40	0.05354	199197
+"sp|Q9H2F9|CCD68_HUMAN Coiled-coil domain-containing protein 68 OS=Homo sapiens OX=9606 GN=CCDC68 PE=1 SV=1"	47.0	45.0	40	0.05354	30137
+"sp|C3PMI6|DAPB_RICAE 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia africae (strain ESF-5) OX=347255 GN=dapB PE=3 SV=1"	47.0	45.0	40	0.05354	48344
+"sp|A8GMB6|DAPB_RICAH 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia akari (strain Hartford) OX=293614 GN=dapB PE=3 SV=1"	47.0	45.0	40	0.05354	48345
+"sp|Q92J79|DAPB_RICCN 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=dapB PE=3 SV=2"	47.0	45.0	40	0.05354	48349
+"sp|Q4UKE7|DAPB_RICFE 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 GN=dapB PE=3 SV=1"	47.0	45.0	40	0.05354	48350
+"sp|C4K0R8|DAPB_RICPU 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia peacockii (strain Rustic) OX=562019 GN=dapB PE=3 SV=1"	47.0	45.0	40	0.05354	48352
+"sp|A8GQX3|DAPB_RICRS 4-hydroxy-tetrahydrodipicolinate reductase OS=Rickettsia rickettsii (strain Sheila Smith) OX=392021 GN=dapB PE=3 SV=1"	47.0	45.0	40	0.05354	48353
+"sp|P43008|EXBB_HAEIN Biopolymer transport protein ExbB OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 GN=exbB PE=3 SV=1"	47.0	45.0	40	0.05354	66695
+"sp|Q9NQC3|RTN4_HUMAN Reticulon-4 OS=Homo sapiens OX=9606 GN=RTN4 PE=1 SV=2"	47.0	45.0	40	0.05354	207675
+"sp|A8IVX2|DRC3_CHLRE Dynein regulatory complex subunit 3 OS=Chlamydomonas reinhardtii OX=3055 GN=DRC3 PE=1 SV=1"	46.0	46.0	40	0.06220	57727
+"sp|Q5E329|ISPF_ALIF1 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase OS=Aliivibrio fischeri (strain ATCC 700601 / ES114) OX=312309 GN=ispF PE=3 SV=1"	46.0	46.0	40	0.06220	104835
+"sp|Q8WU10|PYRD1_HUMAN Pyridine nucleotide-disulfide oxidoreductase domain-containing protein 1 OS=Homo sapiens OX=9606 GN=PYROXD1 PE=1 SV=1"	46.0	46.0	40	0.06220	177427
+"sp|Q5REJ2|PYRD1_PONAB Pyridine nucleotide-disulfide oxidoreductase domain-containing protein 1 OS=Pongo abelii OX=9601 GN=PYROXD1 PE=2 SV=1"	46.0	46.0	40	0.06220	177431
+"sp|P22168|RDRP_FXMV RNA replication protein OS=Foxtail mosaic virus OX=12179 PE=3 SV=1"	46.0	46.0	40	0.06220	182142
+"sp|Q0KA30|RNH2_CUPNH Ribonuclease HII OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=rnhB PE=3 SV=1"	46.0	46.0	40	0.06220	195620
+"sp|P36011|STUA_EMENI Cell pattern formation-associated protein stuA OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=stuA PE=1 SV=2"	46.0	46.0	40	0.06220	221147
+"sp|A2C071|SYI_PROM1 Isoleucine--tRNA ligase OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=ileS PE=3 SV=1"	46.0	46.0	40	0.06220	227105
+"sp|Q46HD5|SYI_PROMT Isoleucine--tRNA ligase OS=Prochlorococcus marinus (strain NATL2A) OX=59920 GN=ileS PE=3 SV=1"	46.0	46.0	40	0.06220	227113
+"sp|A5V592|SYV_RHIWR Valine--tRNA ligase OS=Rhizorhabdus wittichii (strain DSM 6014 / CCUG 31198 / JCM 15750 / NBRC 105917 / EY 4224 / RW1) OX=392499 GN=valS PE=3 SV=1"	46.0	46.0	40	0.06220	231546
+"sp|Q1QC36|URE12_PSYCK Urease subunit alpha 2 OS=Psychrobacter cryohalolentis (strain ATCC BAA-1226 / DSM 17306 / VKM B-2378 / K5) OX=335284 GN=ureC2 PE=3 SV=2"	46.0	46.0	40	0.06220	250088
+"sp|Q89UG0|URE1_BRADU Urease subunit alpha OS=Bradyrhizobium diazoefficiens (strain JCM 10833 / BCRC 13528 / IAM 13628 / NBRC 14792 / USDA 110) OX=224911 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250118
+"sp|Q0KCP6|URE1_CUPNH Urease subunit alpha OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250148
+"sp|Q2IZ49|URE1_RHOP2 Urease subunit alpha OS=Rhodopseudomonas palustris (strain HaA2) OX=316058 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250259
+"sp|Q07K73|URE1_RHOP5 Urease subunit alpha OS=Rhodopseudomonas palustris (strain BisA53) OX=316055 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250260
+"sp|Q6N3N3|URE1_RHOPA Urease subunit alpha OS=Rhodopseudomonas palustris (strain ATCC BAA-98 / CGA009) OX=258594 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250261
+"sp|Q210F9|URE1_RHOPB Urease subunit alpha OS=Rhodopseudomonas palustris (strain BisB18) OX=316056 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250262
+"sp|Q133L6|URE1_RHOPS Urease subunit alpha OS=Rhodopseudomonas palustris (strain BisB5) OX=316057 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250263
+"sp|B3QGK1|URE1_RHOPT Urease subunit alpha OS=Rhodopseudomonas palustris (strain TIE-1) OX=395960 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250264
+"sp|A1WIM3|URE1_VEREI Urease subunit alpha OS=Verminephrobacter eiseniae (strain EF01-2) OX=391735 GN=ureC PE=3 SV=1"	46.0	46.0	40	0.06220	250312
+"sp|Q8NEZ2|VP37A_HUMAN Vacuolar protein sorting-associated protein 37A OS=Homo sapiens OX=9606 GN=VPS37A PE=1 SV=1"	46.0	46.0	40	0.06220	255299
+"sp|Q9FLM3|ZDH23_ARATH Probable protein S-acyltransferase 6 OS=Arabidopsis thaliana OX=3702 GN=PAT06 PE=2 SV=1"	46.0	46.0	40	0.06220	272777
+"sp|P06296|CRF_PIG Corticoliberin OS=Sus scrofa OX=9823 GN=CRH PE=1 SV=3"	46.0	45.0	40	0.06220	41615
+"sp|A7FCZ7|CAPP_YERP3 Phosphoenolpyruvate carboxylase OS=Yersinia pseudotuberculosis serotype O:1b (strain IP 31758) OX=349747 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27715
+"sp|Q1CBV8|CAPP_YERPA Phosphoenolpyruvate carboxylase OS=Yersinia pestis bv. Antiqua (strain Antiqua) OX=360102 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27716
+"sp|B2JZD9|CAPP_YERPB Phosphoenolpyruvate carboxylase OS=Yersinia pseudotuberculosis serotype IB (strain PB1/+) OX=502801 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27717
+"sp|Q8ZA84|CAPP_YERPE Phosphoenolpyruvate carboxylase OS=Yersinia pestis OX=632 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27718
+"sp|Q1CNQ7|CAPP_YERPN Phosphoenolpyruvate carboxylase OS=Yersinia pestis bv. Antiqua (strain Nepal516) OX=377628 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27719
+"sp|A4TRH7|CAPP_YERPP Phosphoenolpyruvate carboxylase OS=Yersinia pestis (strain Pestoides F) OX=386656 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27720
+"sp|Q66G74|CAPP_YERPS Phosphoenolpyruvate carboxylase OS=Yersinia pseudotuberculosis serotype I (strain IP32953) OX=273123 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27721
+"sp|B1JQ63|CAPP_YERPY Phosphoenolpyruvate carboxylase OS=Yersinia pseudotuberculosis serotype O:3 (strain YPIII) OX=502800 GN=ppc PE=3 SV=1"	45.0	45.0	40	0.07215	27722
+"sp|A8AB20|DNLI_IGNH4 DNA ligase OS=Ignicoccus hospitalis (strain KIN4/I / DSM 18386 / JCM 14125) OX=453591 GN=lig PE=3 SV=1"	45.0	45.0	40	0.07215	55492
+"sp|A0C574|EFTS2_PARTE Elongation factor Ts, mitochondrial 2 OS=Paramecium tetraurelia OX=5888 GN=GSPATT00006440001 PE=3 SV=1"	45.0	45.0	40	0.07215	61644
+"sp|A7X2V2|END4_STAA1 Probable endonuclease 4 OS=Staphylococcus aureus (strain Mu3 / ATCC 700698) OX=418127 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63656
+"sp|A6U229|END4_STAA2 Probable endonuclease 4 OS=Staphylococcus aureus (strain JH1) OX=359787 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63657
+"sp|Q2FGG6|END4_STAA3 Probable endonuclease 4 OS=Staphylococcus aureus (strain USA300) OX=367830 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63658
+"sp|Q2FY16|END4_STAA8 Probable endonuclease 4 OS=Staphylococcus aureus (strain NCTC 8325 / PS 47) OX=93061 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63659
+"sp|A5IT85|END4_STAA9 Probable endonuclease 4 OS=Staphylococcus aureus (strain JH9) OX=359786 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63660
+"sp|Q2YT22|END4_STAAB Probable endonuclease 4 OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) OX=273036 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63661
+"sp|Q5HFK3|END4_STAAC Probable endonuclease 4 OS=Staphylococcus aureus (strain COL) OX=93062 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63662
+"sp|A6QHA0|END4_STAAE Probable endonuclease 4 OS=Staphylococcus aureus (strain Newman) OX=426430 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63663
+"sp|P63537|END4_STAAM Probable endonuclease 4 OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63664
+"sp|P63538|END4_STAAN Probable endonuclease 4 OS=Staphylococcus aureus (strain N315) OX=158879 GN=nfo PE=1 SV=1"	45.0	45.0	40	0.07215	63665
+"sp|Q6GGE2|END4_STAAR Probable endonuclease 4 OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=nfo PE=1 SV=1"	45.0	45.0	40	0.07215	63666
+"sp|Q6G909|END4_STAAS Probable endonuclease 4 OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63667
+"sp|A8Z497|END4_STAAT Probable endonuclease 4 OS=Staphylococcus aureus (strain USA300 / TCH1516) OX=451516 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63668
+"sp|P63539|END4_STAAW Probable endonuclease 4 OS=Staphylococcus aureus (strain MW2) OX=196620 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63669
+"sp|Q5HNZ1|END4_STAEQ Probable endonuclease 4 OS=Staphylococcus epidermidis (strain ATCC 35984 / DSM 28319 / BCRC 17069 / CCUG 31568 / BM 3577 / RP62A) OX=176279 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63671
+"sp|Q8CP25|END4_STAES Probable endonuclease 4 OS=Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 GN=nfo PE=3 SV=1"	45.0	45.0	40	0.07215	63672
+"sp|Q9A9W0|ISPG_CAUVC 4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin) OS=Caulobacter vibrioides (strain ATCC 19089 / CIP 103742 / CB 15) OX=190650 GN=ispG PE=3 SV=1"	45.0	45.0	40	0.07215	105048
+"sp|Q96EV2|RBM33_HUMAN RNA-binding protein 33 OS=Homo sapiens OX=9606 GN=RBM33 PE=1 SV=3"	45.0	45.0	40	0.07215	181477
+"sp|P39531|RCY1_YEAST Recyclin-1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RCY1 PE=1 SV=4"	45.0	45.0	40	0.07215	181921
+"sp|Q5L0P0|RNH2_GEOKA Ribonuclease HII OS=Geobacillus kaustophilus (strain HTA426) OX=235909 GN=rnhB PE=3 SV=1"	45.0	45.0	40	0.07215	195633
+"sp|Q8XZH7|RNH2_RALN1 Ribonuclease HII OS=Ralstonia nicotianae (strain ATCC BAA-1114 / GMI1000) OX=267608 GN=rnhB PE=3 SV=1"	45.0	45.0	40	0.07215	195699
+"sp|Q8VDI7|UBAC1_MOUSE Ubiquitin-associated domain-containing protein 1 OS=Mus musculus OX=10090 GN=Ubac1 PE=1 SV=2"	45.0	45.0	40	0.07215	247323
+"sp|Q5XIR9|UBAC1_RAT Ubiquitin-associated domain-containing protein 1 OS=Rattus norvegicus OX=10116 GN=Ubac1 PE=1 SV=1"	45.0	45.0	40	0.07215	247324
+"sp|A1TSZ6|URE1_PARC0 Urease subunit alpha OS=Paracidovorax citrulli (strain AAC00-1) OX=397945 GN=ureC PE=3 SV=1"	45.0	45.0	40	0.07215	250219
+"sp|C5CY00|URE1_VARPS Urease subunit alpha OS=Variovorax paradoxus (strain S110) OX=543728 GN=ureC PE=3 SV=1"	45.0	45.0	40	0.07215	250311
+"sp|Q9PK60|UVRA_CHLMU UvrABC system protein A OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 GN=uvrA PE=3 SV=1"	45.0	45.0	40	0.07215	251614
+"sp|Q7A1Q7|Y508_STAAW Uncharacterized epimerase/dehydratase MW0508 OS=Staphylococcus aureus (strain MW2) OX=196620 GN=MW0508 PE=3 SV=1"	45.0	45.0	40	0.07215	264388
+"sp|Q7A788|Y511_STAAN Uncharacterized epimerase/dehydratase SA0511 OS=Staphylococcus aureus (strain N315) OX=158879 GN=SA0511 PE=1 SV=1"	45.0	45.0	40	0.07215	264402
+"sp|Q6GBT4|Y511_STAAS Uncharacterized epimerase/dehydratase SAS0511 OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=SAS0511 PE=3 SV=1"	45.0	45.0	40	0.07215	264403
+"sp|Q2G0M5|Y535_STAA8 Uncharacterized epimerase/dehydratase SAOUHSC_00535 OS=Staphylococcus aureus (strain NCTC 8325 / PS 47) OX=93061 GN=SAOUHSC_00535 PE=3 SV=1"	45.0	45.0	40	0.07215	264500
+"sp|Q2FJ87|Y538_STAA3 Uncharacterized epimerase/dehydratase SAUSA300_0538 OS=Staphylococcus aureus (strain USA300) OX=367830 GN=SAUSA300_0538 PE=3 SV=1"	45.0	45.0	40	0.07215	264515
+"sp|Q99W56|Y553_STAAM Uncharacterized epimerase/dehydratase SAV0553 OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 GN=SAV0553 PE=3 SV=1"	45.0	45.0	40	0.07215	264589
+"sp|Q6GJB5|Y558_STAAR Uncharacterized epimerase/dehydratase SAR0558 OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=SAR0558 PE=3 SV=1"	45.0	45.0	40	0.07215	264610
+"sp|Q5HIC2|Y599_STAAC Uncharacterized epimerase/dehydratase SACOL0599 OS=Staphylococcus aureus (strain COL) OX=93062 GN=SACOL0599 PE=3 SV=1"	45.0	45.0	40	0.07215	264783
+"sp|P0ACY5|YEAG_ECO57 Uncharacterized protein YeaG OS=Escherichia coli O157:H7 OX=83334 GN=yeaG PE=3 SV=1"	45.0	45.0	40	0.07215	268064
+"sp|P0ACY4|YEAG_ECOL6 Uncharacterized protein YeaG OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=yeaG PE=3 SV=1"	45.0	45.0	40	0.07215	268065
+"sp|P0ACY3|YEAG_ECOLI Uncharacterized protein YeaG OS=Escherichia coli (strain K12) OX=83333 GN=yeaG PE=3 SV=1"	45.0	45.0	40	0.07215	268066
+"sp|Q9H869|YYAP1_HUMAN YY1-associated protein 1 OS=Homo sapiens OX=9606 GN=YY1AP1 PE=1 SV=2"	44.0	44.0	40	0.08354	272327
+"sp|P04704|ZEA2_MAIZE Zein-alpha ZG99 OS=Zea mays OX=4577 PE=2 SV=1"	44.0	44.0	40	0.08354	272836
+"sp|P04701|ZEAL_MAIZE Zein-alpha Z4 OS=Zea mays OX=4577 PE=3 SV=2"	44.0	44.0	40	0.08354	272848
