@@ -6,6 +6,7 @@ print("*************************************************************************
 # Simon Tomlinson Bioinformatics Algorithms 2025
 #  You need to install the required packages eg blosum
 
+import os
 import smith_waterman_p as SW
 import time
 from operator import itemgetter
@@ -259,7 +260,7 @@ def print_final_results(res):
 
 
     #write the raw data to a file
-    with open("logs\BLsearch.csv", 'w') as outputfile:
+    with open(os.path.join("logs", "BLsearch.csv"), 'w') as outputfile:
         outputfile.write("Name\tSWScore\tExscore\tBitScore\tExpect\tSeqIndex"+os.linesep)
 
         for i in res2:

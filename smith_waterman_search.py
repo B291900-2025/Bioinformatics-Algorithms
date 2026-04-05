@@ -62,7 +62,7 @@ len = len(query_sequence)
 
 #write the raw data to a file
 #res ==i  is (current_header, myline, score,fileindex)
-with open("logs\SWsearch.csv", 'w') as outputfile:
+with open(os.path.join("logs", "SWsearch.csv"), 'w') as outputfile:
     outputfile.write("Name\tSWScore\tBitScore\tE-value\tSeqIndex\n")
 
     for i in res:
