@@ -1,0 +1,31 @@
+[INFO] Starting Smith-Waterman search (this may be slow for large databases)...
+
+###############################################################
+SW Alignment Results
+Query: PWNAAPLHNFGEDFLQPYVQLQQNFSASDLEVNLEATRESHAHFSTPQALELFLNYSVTP
+Database: uniprot_bit2.fasta
+###############################################################
+
+"sp|Q80Z64|NANOG_MOUSE Homeobox protein ..."	Score=320.0	BitScore=nan	E=0.00000E+00
+"sp|A1YG92|NANG2_PANPA Putative homeobox..."	Score=103.0	BitScore=53	E=7.55209E-06
+"sp|Q8N7R0|NANG2_HUMAN Putative homeobox..."	Score=94.0	BitScore=51	E=3.16795E-05
+"sp|Q4JM65|NANOG_BOVIN Homeobox protein ..."	Score=93.0	BitScore=51	E=3.71508E-05
+"sp|O46491|CP7A1_PIG Cytochrome P450 7A1..."	Score=60.0	BitScore=43	E=0.00708
+"sp|Q4WVV6|MDM10_ASPFU Mitochondrial dis..."	Score=60.0	BitScore=43	E=0.00708
+"sp|B0Y240|MDM10_ASPFC Mitochondrial dis..."	Score=59.0	BitScore=43	E=0.00830
+"sp|P22680|CP7A1_HUMAN Cytochrome P450 7..."	Score=58.0	BitScore=43	E=0.00971
+"sp|Q50LG3|AFT91_ALTAL Highly reducing p..."	Score=57.0	BitScore=43	E=0.01137
+"sp|B2GEY3|ADDB_LIMF3 ATP-dependent heli..."	Score=53.0	BitScore=42	E=0.02129
+"sp|Q09406|A16L2_CAEEL Autophagic-relate..."	Score=49.0	BitScore=41	E=0.03952
+"sp|P0C9T4|5054R_ASFP4 Protein MGF 505-4..."	Score=48.0	BitScore=41	E=0.04602
+"sp|Q25538|1433_NEOCA 14-3-3 protein hom..."	Score=45.0	BitScore=40	E=0.07215
+"sp|Q197A6|054L_IIV3 Uncharacterized pro..."	Score=40.0	BitScore=39	E=0.14662
+"sp|Q6GZS3|053R_FRG3G Putative myristoyl..."	Score=37.0	BitScore=38	E=0.21574
+"sp|Q197D5|025R_IIV3 Uncharacterized pro..."	Score=36.0	BitScore=38	E=0.24313
+"sp|Q6GZV4|021L_FRG3G Uncharacterized pr..."	Score=29.0	BitScore=37	E=0.46774
+"sp|Q197F5|005L_IIV3 Uncharacterized pro..."	Score=28.0	BitScore=37	E=0.49792
+"sp|Q6GZX4|001R_FRG3G Putative transcrip..."	Score=27.0	BitScore=37	E=0.52565
+
+Time taken: 0.44 secs
+SW time: 99.7%
+~~~~~~~~~Finished~~~~~~~~~

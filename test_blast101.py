@@ -14,7 +14,7 @@
 import unittest
 import os
 import sys
-VENV_PYTHON = "/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3"
+VENV_PYTHON = os.path.expanduser("~/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3")
 if sys.executable != VENV_PYTHON:
     import subprocess
     result = subprocess.run([VENV_PYTHON] + sys.argv, stdout=sys.stdout, stderr=sys.stderr)
