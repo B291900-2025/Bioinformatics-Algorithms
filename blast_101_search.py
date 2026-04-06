@@ -340,4 +340,5 @@ def init_print_timer():
     aligner_timer_secs["Elapsedtime"] = 0
 
 
-blast101_run()
+if __name__ == "__main__":
+    blast101_run()

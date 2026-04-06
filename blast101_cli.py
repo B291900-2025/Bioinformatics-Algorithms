@@ -15,10 +15,13 @@ if sys.executable != VENV_PYTHON:
 # Usage:
 #   python blast101_cli.py --mode blast --query <seq> --database <file>
 #   python blast101_cli.py --mode blast --query <seq> --database <file> --output results.txt
+#   python blast101_cli.py --mode blast --query-file query.fasta --database <file>
+#   python blast101_cli.py --mode blast --blosum 80 --gap -10
 #   python blast101_cli.py --mode sw --query <seq>
 #   python blast101_cli.py --mode stats
 #   python blast101_cli.py --mode test
 #
+# Simon Tomlinson Bioinformatics Algorithms 2025
 ################################################################################
 
 import argparse
@@ -41,13 +44,13 @@ BANNER = """
 """
 
 # ---------------------------------------------------------------------------
-# Sequence Validation
+# Validation helpers
 # ---------------------------------------------------------------------------
 def validate_sequence(seq):
     """
     Validates a protein query sequence.
     Checks for: empty input, DNA-only composition, invalid characters.
-    Returns cleaned sequence string or raises SystemExit with a clear message.
+    Returns cleaned uppercase sequence or raises SystemExit with a clear message.
     """
     if not seq or len(seq.strip()) == 0:
         print("[ERROR] Query sequence is empty.")
@@ -55,8 +58,8 @@ def validate_sequence(seq):
 
     seq = seq.strip().upper()
 
-    # Check for DNA before residue check — A/C/G/T are valid amino acids
-    # so DNA would otherwise pass residue validation
+    # Check for DNA before residue check — A/C/G/T are all valid amino acid
+    # codes so a DNA sequence would otherwise pass residue validation silently
     if all(c in DNA_ONLY for c in seq):
         print("[ERROR] Query sequence looks like DNA (only A/C/G/T found).")
         print("        Blast101 requires a PROTEIN sequence.")
@@ -92,6 +95,43 @@ def validate_database(db):
     if not db.endswith(".fasta"):
         print(f"[WARNING] Database file '{db}' does not have a .fasta extension.")
     return db
+
+
+def validate_gap(gap):
+    """
+    Gap penalty must be a negative integer.
+    A positive gap penalty would incorrectly reward gaps in the alignment.
+    """
+    if gap >= 0:
+        print(f"[ERROR] Gap penalty must be negative, got {gap}.")
+        print("        Example: --gap -8")
+        sys.exit(1)
+    return gap
+
+
+def read_query_from_fasta(filepath):
+    """
+    Reads the first sequence from a FASTA file and returns it as a string.
+    Useful for long sequences that are impractical to paste on the command line.
+    Only the first sequence in the file is used.
+    """
+    if not os.path.isfile(filepath):
+        print(f"[ERROR] Query FASTA file not found: '{filepath}'")
+        sys.exit(1)
+    seq = ""
+    with open(filepath, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith('>'):
+                if seq:
+                    break  # Only read first sequence
+                continue
+            seq += line
+    if not seq:
+        print(f"[ERROR] No sequence found in query FASTA file: '{filepath}'")
+        sys.exit(1)
+    print(f"[INFO] Query sequence loaded from file: {filepath}")
+    return seq
 
 
 def get_output_stream(output_path):
@@ -158,21 +198,16 @@ def run_blast(args, settings, output_fh=None):
 
     tee_print("[INFO] Starting BLAST search...", fh=output_fh)
 
-    # Run the search phase
+    b.init_print_timer()
     res = b.process_fasta_file()
 
-    # Print results to screen and optionally to file
     if output_fh:
-        # Redirect stdout temporarily to capture output to file as well
         old_stdout = sys.stdout
         sys.stdout = output_fh
         b.print_final_results(res)
         sys.stdout = old_stdout
-        # Also print to screen
-        b.print_final_results(res)
     else:
         b.print_final_results(res)
-
 
 def run_sw(args, settings, output_fh=None):
     """Runs the Smith-Waterman exhaustive search."""
@@ -183,8 +218,8 @@ def run_sw(args, settings, output_fh=None):
     import programme_settings
     programme_settings.settings = settings
 
-    tee_print("[INFO] Starting Smith-Waterman search (this may be slow for large databases)...",
-              fh=output_fh)
+    tee_print("[INFO] Starting Smith-Waterman search "
+              "(this may be slow for large databases)...", fh=output_fh)
 
     import smith_waterman_p as SW
     import process_fasta_file as pff
@@ -203,9 +238,9 @@ def run_sw(args, settings, output_fh=None):
         aligntime += (t4 - t3)
         return res
 
-    t0 = time.time()
-    pff.res        = []
-    pff.bestscore  = 0
+    t0            = time.time()
+    pff.res       = []
+    pff.bestscore = 0
     res = pff.process_fasta_file(args.database, processSW, args.max_scores)
     t1  = time.time()
 
@@ -236,7 +271,8 @@ def run_sw(args, settings, output_fh=None):
 
 def run_stats(args, settings, output_fh=None):
     """Runs the Gumbel distribution fit on random SW score data."""
-    tee_print("[INFO] Running statistical analysis (Gumbel distribution fit)...", fh=output_fh)
+    tee_print("[INFO] Running statistical analysis "
+              "(Gumbel distribution fit)...", fh=output_fh)
     import build_expect_scores
     build_expect_scores.run_trial()
 
@@ -245,7 +281,8 @@ def run_tests():
     """Runs the full automated test suite using the venv Python."""
     print("[INFO] Running automated test suite...\n")
     import subprocess
-    test_file   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_blast101.py")
+    test_file   = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "test_blast101.py")
     venv_python = "/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3"
     result      = subprocess.run([venv_python, test_file],
                                  cwd=os.path.dirname(os.path.abspath(__file__)))
@@ -258,9 +295,11 @@ def run_tests():
 def build_parser(settings):
     """Builds and returns the argparse argument parser."""
 
-    default_query = settings["DEFAULT"]["query_sequence"]
-    default_db    = settings["DEFAULT"]["database"]
-    default_max   = int(settings["BLAST"]["max_scores"])
+    default_query  = settings["DEFAULT"]["query_sequence"]
+    default_db     = settings["DEFAULT"]["database"]
+    default_max    = int(settings["BLAST"]["max_scores"])
+    default_blosum = int(settings["DEFAULT"]["blosum"])
+    default_gap    = int(settings["DEFAULT"]["seq_gap"])
 
     parser = argparse.ArgumentParser(
         prog="blast101_cli.py",
@@ -275,6 +314,10 @@ def build_parser(settings):
             "  python blast101_cli.py --mode blast\n"
             "  python blast101_cli.py --mode blast --query PWNAAPLHNFGEDFLQ "
             "--database uniprot_bit2.fasta\n"
+            "  python blast101_cli.py --mode blast --query-file query.fasta "
+            "--database uniprot_bit2.fasta\n"
+            "  python blast101_cli.py --mode blast --database uniprot_bit2.fasta "
+            "--blosum 80 --gap -10\n"
             "  python blast101_cli.py --mode blast --database uniprot_bit2.fasta "
             "--output results.txt\n"
             "  python blast101_cli.py --mode sw --query PWNAAPLHNFGEDFLQ\n"
@@ -295,6 +338,13 @@ def build_parser(settings):
         help="Protein query sequence. Default: sequence from settings.ini"
     )
     parser.add_argument(
+        "--query-file", "-qf",
+        default=None,
+        dest="query_file",
+        help="Path to a FASTA file containing the query sequence. "
+             "Overrides --query if both are provided."
+    )
+    parser.add_argument(
         "--database", "-d",
         default=default_db,
         help=f"FASTA database file to search. Default: {default_db}"
@@ -305,6 +355,21 @@ def build_parser(settings):
         default=default_max,
         dest="max_scores",
         help=f"Maximum number of results to return. Default: {default_max}"
+    )
+    parser.add_argument(
+        "--blosum", "-b",
+        type=int,
+        choices=[45, 50, 62, 80, 90],
+        default=default_blosum,
+        dest="blosum",
+        help=f"BLOSUM matrix to use. Choices: 45, 50, 62, 80, 90. Default: {default_blosum}"
+    )
+    parser.add_argument(
+        "--gap", "-g",
+        type=int,
+        default=default_gap,
+        dest="gap",
+        help=f"Gap penalty (must be negative). Default: {default_gap}"
     )
     parser.add_argument(
         "--output", "-o",
@@ -331,18 +396,27 @@ def main():
     parser = build_parser(settings)
     args   = parser.parse_args()
 
-    # Test mode skips sequence/database validation
+    # Test mode skips all other validation
     if args.mode == "test":
         run_tests()
         return
 
+    # --query-file overrides --query if provided
+    if args.query_file:
+        args.query = read_query_from_fasta(args.query_file)
+
     # --- Validate inputs ---
     args.query    = validate_sequence(args.query)
     args.database = validate_database(args.database)
+    args.gap      = validate_gap(args.gap)
 
     if args.max_scores < 1:
         print("[ERROR] --max-scores must be at least 1.")
         sys.exit(1)
+
+    # --- Apply blosum and gap overrides to settings ---
+    settings["DEFAULT"]["blosum"]  = str(args.blosum)
+    settings["DEFAULT"]["seq_gap"] = str(args.gap)
 
     # --- Open output file if requested ---
     output_fh = get_output_stream(args.output)
