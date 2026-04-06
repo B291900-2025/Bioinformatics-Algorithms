@@ -21,12 +21,12 @@ if sys.executable != VENV_PYTHON:
 #   python blast101_cli.py --mode stats
 #   python blast101_cli.py --mode test
 #
-# Simon Tomlinson Bioinformatics Algorithms 2025
 ################################################################################
 
 import argparse
 import os
 import sys
+import json
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -85,9 +85,7 @@ def validate_sequence(seq):
 
 
 def validate_database(db):
-    """
-    Checks the database file exists and is readable.
-    """
+    """Checks the database file exists and is readable."""
     if not os.path.isfile(db):
         print(f"[ERROR] Database file not found: '{db}'")
         print("        Check the filename and that you are running from the correct directory.")
@@ -124,7 +122,7 @@ def read_query_from_fasta(filepath):
             line = line.strip()
             if line.startswith('>'):
                 if seq:
-                    break  # Only read first sequence
+                    break
                 continue
             seq += line
     if not seq:
@@ -209,6 +207,7 @@ def run_blast(args, settings, output_fh=None):
     else:
         b.print_final_results(res)
 
+
 def run_sw(args, settings, output_fh=None):
     """Runs the Smith-Waterman exhaustive search."""
     settings["DEFAULT"]["query_sequence"] = args.query
@@ -278,14 +277,121 @@ def run_stats(args, settings, output_fh=None):
 
 
 def run_tests():
-    """Runs the full automated test suite using the venv Python."""
-    print("[INFO] Running automated test suite...\n")
+    """Runs the full automated test suite using a JSON runner for clean output."""
     import subprocess
-    test_file   = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                               "test_blast101.py")
+
+    script_dir  = os.path.dirname(os.path.abspath(__file__))
     venv_python = "/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3"
-    result      = subprocess.run([venv_python, test_file],
-                                 cwd=os.path.dirname(os.path.abspath(__file__)))
+    runner_script = os.path.join(script_dir, "_test_runner.py")
+
+    # Write a temporary runner that collects results as JSON
+    with open(runner_script, 'w') as f:
+        f.write("""
+import unittest, json, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+loader = unittest.TestLoader()
+suite  = loader.discover(start_dir=os.path.dirname(os.path.abspath(__file__)),
+                         pattern="test_blast101.py")
+
+class JsonResult(unittest.TestResult):
+    def __init__(self):
+        super().__init__()
+        self.results = []
+    def addSuccess(self, test):
+        self.results.append({"cls": type(test).__name__,
+                              "method": test._testMethodName,
+                              "status": "ok"})
+    def addFailure(self, test, err):
+        self.results.append({"cls": type(test).__name__,
+                              "method": test._testMethodName,
+                              "status": "FAIL",
+                              "msg": str(err[1])})
+    def addError(self, test, err):
+        self.results.append({"cls": type(test).__name__,
+                              "method": test._testMethodName,
+                              "status": "ERROR",
+                              "msg": str(err[1])})
+
+collector = JsonResult()
+suite.run(collector)
+print("JSON_RESULTS:" + json.dumps(collector.results))
+sys.exit(0 if not collector.failures and not collector.errors else 1)
+""")
+
+    result = subprocess.run(
+        [venv_python, runner_script],
+        cwd=script_dir,
+        capture_output=True,
+        text=True
+    )
+
+    # Clean up temp runner
+    if os.path.exists(runner_script):
+        os.unlink(runner_script)
+
+    # Find the JSON line
+    json_line = None
+    for line in result.stdout.split("\n"):
+        if line.startswith("JSON_RESULTS:"):
+            json_line = line[len("JSON_RESULTS:"):]
+            break
+
+    print("\n" + "─" * 66)
+    print("  Running Blast101 Automated Test Suite")
+    print("─" * 66)
+
+    if json_line is None:
+        # Fallback: something went wrong, print raw output
+        print(result.stdout)
+        print(result.stderr)
+        sys.exit(result.returncode)
+
+    data = json.loads(json_line)
+
+    # Group by class
+    classes = {}
+    for t in data:
+        cls = t["cls"]
+        classes.setdefault(cls, {"passed": [], "failed": [], "errors": []})
+        if t["status"] == "ok":
+            classes[cls]["passed"].append(t["method"])
+        elif t["status"] == "FAIL":
+            classes[cls]["failed"].append((t["method"], t.get("msg", "")))
+        else:
+            classes[cls]["errors"].append((t["method"], t.get("msg", "")))
+
+    total_passed = total_failed = total_errors = 0
+
+    for cls, res in classes.items():
+        p = len(res["passed"])
+        f = len(res["failed"])
+        e = len(res["errors"])
+        t = p + f + e
+        total_passed += p
+        total_failed += f
+        total_errors += e
+        icon = "✓" if f == 0 and e == 0 else "✗"
+        print(f"\n  {icon}  {cls}  ({p}/{t} passed)")
+        print("  " + "·" * 50)
+        for method in res["passed"]:
+            print(f"      ✓  {method}")
+        for method, msg in res["failed"]:
+            print(f"      ✗  {method}  [FAILED]")
+            print(f"         {msg[:100]}")
+        for method, msg in res["errors"]:
+            print(f"      !  {method}  [ERROR]")
+            print(f"         {msg[:100]}")
+
+    total_all = total_passed + total_failed + total_errors
+    print("\n" + "─" * 66)
+    if total_failed or total_errors:
+        print(f"  RESULT: {total_failed} failure(s), {total_errors} error(s) "
+              f"from {total_all} tests")
+    else:
+        print(f"  RESULT: All {total_all} tests passed ✓")
+    print("─" * 66 + "\n")
+
     sys.exit(result.returncode)
 
 
@@ -362,7 +468,8 @@ def build_parser(settings):
         choices=[45, 50, 62, 80, 90],
         default=default_blosum,
         dest="blosum",
-        help=f"BLOSUM matrix to use. Choices: 45, 50, 62, 80, 90. Default: {default_blosum}"
+        help=f"BLOSUM matrix to use. Choices: 45, 50, 62, 80, 90. "
+             f"Default: {default_blosum}"
     )
     parser.add_argument(
         "--gap", "-g",
