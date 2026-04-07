@@ -1,4 +1,3 @@
-#!/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3
 import sys
 import os
 VENV_PYTHON = os.path.expanduser("~/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3")
@@ -281,7 +280,7 @@ def run_tests():
     import subprocess
 
     script_dir  = os.path.dirname(os.path.abspath(__file__))
-    venv_python = "/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3"
+    venv_python = os.path.expanduser("~/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3")
     runner_script = os.path.join(script_dir, "_test_runner.py")
 
     # Write a temporary runner that collects results as JSON

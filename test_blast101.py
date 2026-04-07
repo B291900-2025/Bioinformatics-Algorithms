@@ -1,11 +1,8 @@
 ################################################################################
-#!/home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3
 # test_blast101.py
 # Automated test suite for the Blast101 application
 # Tests cover: Smith-Waterman alignment, sequence validation, word dictionary,
 #              E-value/bit score calculations, FASTA parsing, and settings I/O
-#
-# Run with:  /home/s2793337/Bioinformatics_Algorithms/ICA/Blast101_code/BA_ICA/bin/python3 test_blast101.py
 #
 # Reference scores verified against the built-in test() functions
 # in smith_waterman_p.py and calc_bit_and_evalues.py
